@@ -47,6 +47,10 @@ export const Content = styled.section`
         align-self: center;
         margin: auto;
     }
+
+    @media only screen and (max-width: 768px) {
+        width: 80%;
+    }
 `;
 
 export const Footer = styled.form `
@@ -66,6 +70,10 @@ export const Footer = styled.form `
         max-width: 500px;
         border-radius: 8px;
         border-style: none;
+
+        @media only screen and (max-width: 768px) {
+            width: 75%;
+        }
     }
     button {
         padding: 0.5em;
@@ -83,6 +91,5 @@ export const Footer = styled.form `
             color: ${({ theme }) => theme['success-green']};
             background-color: ${({ theme }) => theme['constant-white']};
         }
-    }
-
+    }  
 `;
